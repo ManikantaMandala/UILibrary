@@ -1,0 +1,9 @@
+.ComponentsNavBar{
+    margin: 1rem;
+}
+.ComponentsNavBar > * {
+    margin: 1rem;
+}
+.NavBar > *{
+    margin: 1rem;
+}
