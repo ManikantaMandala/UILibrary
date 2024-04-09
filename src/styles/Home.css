@@ -1,0 +1,18 @@
+.HomeDetails{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.HomeDetails h1, p{
+    color: white;
+    margin: 0;
+}
+.HomeDetails h1{
+    font-size: 4rem;
+}
+.HomeDetails p{
+    font-size: 1.25rem;
+    padding: 1rem;
+}

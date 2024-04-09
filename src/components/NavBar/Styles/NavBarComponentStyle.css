@@ -1,0 +1,158 @@
+.Wrapper{
+    position: sticky;
+    z-index: 100;
+}
+.NavBarsWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 4rem;
+    background-color: #222226;
+}
+.SearchInput *{
+    padding: 0.5rem;
+    display: flex;
+}
+.SearchInput input{
+    max-width: 200px;
+    min-width: 20rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.SearchInput button{
+    background-color: #0B8BA6;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    margin: 0;
+    padding:0;
+    cursor: pointer;
+}
+.SearchInput svg{
+    width: 1rem;
+}
+.SearchInput select{
+    border-radius: 0;
+    border: none;
+}
+.SearchInput *:focus{
+    outline: none;
+}
+.SearchInput:focus{
+    outline: none;
+}
+.LogoAndLinks{
+    display: flex;
+    gap: 1rem;
+}
+.NavLinks{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.NavLinks a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.NavBarUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0px;
+    margin: 0px;
+}
+.NavBarUl *:focus{
+    outline: none;
+    color: #F2F2F2;
+}
+#NavBarUl a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+#NavBarUl a:hover{
+    color: #F3E5AB;
+}
+.NavBarLi{
+    list-style: none;
+    color: #F2F2F2;
+}
+.NavBarLi a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.NavBarLi a:hover{
+    color: #F3E5AB;
+}
+.NavBarLi a:active{
+    color: #F3E5AB;
+}
+.SideBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 999;
+    width: 100%;
+}
+.SearchButtonSideBar {
+    display: none;
+}
+.SideBarLi{
+    list-style: none;
+    text-decoration: none;
+    background-color: #222226;
+    padding: 1rem;
+}
+.SideBarUl{
+    padding: 0;
+    margin: 0;
+}
+.SideBarUl a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+.menuButton{
+    cursor: pointer;
+    display:none;
+}
+@media screen and (max-width: 1100px){
+    .NavBarsWrapper{
+        gap: 1rem;
+        justify-content: flex-end;
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+    }
+    .NavBarsWrapper > div:first-child {
+        margin-right: auto;
+    }
+    .SearchInput{
+        display: none;
+    }
+    .SearchButtonSideBar button{
+        display: block;
+        background-color: transparent;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        margin: 0;
+        padding:0;
+        cursor: pointer;
+    }
+    .SearchButtonSideBar svg{
+        width: 2rem;
+    }
+    .NavLinks{
+        display: none;
+    }
+    .menuButton{
+        display: block;
+    }
+    .SideBar{
+        display: block;
+        text-align: center;
+        color: #F2F2F2;
+        font-size: 1.5rem;
+    }
+}

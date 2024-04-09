@@ -1,0 +1,37 @@
+.card-image-wrapper{
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1rem;
+}
+.card-image-wrapper *{
+    border-radius: .5rem;
+}
+.side-images{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.side-images img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.main-image img{
+    width: 431.25px;
+}
+@media screen and (max-width: 600px){
+    .card-image-wrapper{
+        flex-direction: column-reverse;
+    }
+    .side-images{
+        flex-direction: row;
+        width: 100%;
+    }
+    .main-image img{
+        width: 100%;
+    }
+    .side-images img{
+        width: 20%;
+        height: 20%;
+    }
+}
