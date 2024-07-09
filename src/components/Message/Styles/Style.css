@@ -1,0 +1,27 @@
+:root{
+	--smallest-font-size: .45rem;
+}
+.message-wrapper{
+	position: relative;
+	background-color: blue;
+	color: white;
+	height: fit-content;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+.message{
+	width: 100%;
+}
+.message-time p {
+	font-size: var(--smallest-font-size);
+	text-align: end;
+}
+.send-name p{
+	font-size: var(--smallest-font-size);
+}
+.message-data{
+	padding: .25rem 0;
+}
+.message-data p{
+	font-size: 1rem;
+}

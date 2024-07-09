@@ -4,6 +4,8 @@
 	--darkreader-text--base04: #a1988c;
 	--darkreader-text--base05: #b9b3aa;
 	--base06: #b6bdca;
+	--red-banner-gradient-first: linear-gradient(to right, red, #d96060);
+	--red-banner-gradient-second: linear-gradient(to right, #d96060, white);
 	--darkreader-text--base07: #fead6a;
 	--darkreader-text--base08: #69def6;
 	--darkreader-text--base09: #fead6a;

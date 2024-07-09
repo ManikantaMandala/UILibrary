@@ -14,6 +14,8 @@ import CardsComponent from './components/Cards/CardsComponent';
 import CardImageView from './components/Cards/CardImageViewComponent';
 import RatingStars from './components/Cards/RatingStars';
 import Footer from './components/Footer/FooterComponent';
+import { Banner } from './components/Banners/BannerComponent';
+import { Message } from './components/Message/MessageComponent';
 
 
 const App = createHashRouter([
@@ -254,7 +256,9 @@ const App = createHashRouter([
                                             productName: "lorem ipsum fire tv with alexa voice remote Tv etc.",
                                             productRating: 4.5,
                                             productPrice: 150,
-                                            small: false
+                                            small: false,
+											bannerColor: "red",
+											bannerText: "50% OFF"
                                         }}
                                         />
                                         <br/>
@@ -264,7 +268,9 @@ const App = createHashRouter([
                                             productName: "lorem ipsum fire tv with alexa voice remote Tv etc.",
                                             productRating: 4,
                                             productPrice: 100,
-                                            small: true
+                                            small: true,
+											bannerColor: "lightgreen",
+											bannerText: "New"
                                         }}
                                         />
                                     </div>
@@ -349,7 +355,27 @@ const App = createHashRouter([
                                         }
                                     />
 
-                    }
+                    },
+                    // Banner
+                    {
+                        path: "banner",
+                        element: <Banner 
+									text="50% OFF"
+									color='red'
+								/>
+                    },
+					// Message component
+					{
+						path: "message",
+						element: <Message
+									{...{
+										messageData: "Hello, how are you?",
+										time: new Date(),
+										send: "server",
+										color: "green"
+									}}
+								/>
+					}
                 ]
             },
         ]

@@ -16,7 +16,7 @@ interface aTagProps{
 
 export default function Footer(footProps: footerProps){
     return (
-        <div className="footer-wrapper">
+        <footer className="footer-wrapper">
             <div className="footer-details">
                 <div className="company-details">
                     <div className="logo">
@@ -90,6 +90,6 @@ export default function Footer(footProps: footerProps){
             <div className="copy-right-details">
                 CopyRight Text
             </div>
-        </div>
+        </footer>
     )
 }

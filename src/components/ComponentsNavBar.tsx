@@ -14,6 +14,8 @@ export default function ComponentsNavBar() {
             <NavLink to="/components/Slides">Slides</NavLink>
             <NavLink to="/components/Cards">Cards</NavLink>
             <NavLink to="/components/footer">Footer</NavLink>
+            <NavLink to="/components/banner">Banner</NavLink>
+            <NavLink to="/components/message">Message</NavLink>
         </div>
     );
 }

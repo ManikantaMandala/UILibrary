@@ -1,11 +1,7 @@
 .card {
     position: relative; /* Positions the card relative to its container */
-    width: 28rem; /* Sets the width of the card */
-    height: auto; /* Allows the card height to adjust based on content */
     overflow: hidden; /* Ensures that any content overflowing the card is hidden */
     border-radius: 16px; /* Adds rounded corners to the card */
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,.25), /* Adds a box shadow for visual depth */
-        1px -2px 3px 0px rgba(0,0,0,.15); /* Adds a box shadow for visual depth */
 }
 
 .productImage {
@@ -43,6 +39,13 @@
     width: 100%;
     height: 100%;
     gap: 1rem;
+}
+.banner{
+	position: relative;
+	top: 60px;
+	left: 0;
+	width: 50%;
+	z-index: 1;
 }
 @media screen and (max-width: 1080px){
     .CardComponent{
